@@ -82,7 +82,7 @@ func Nothingtoexplainevensomeonewithoutknowledgewouldcheckit(s *discordgo.Sessio
 
 	customIDParts := strings.Split(i.ModalSubmitData().CustomID, ":")
 	if len(customIDParts) < 2 {
-		fmt.Println("Error: No category found in modal CustomID")
+		fmt.Println("No CustomID")
 		return
 	}
 
@@ -121,7 +121,7 @@ func Nothingtoexplainevensomeonewithoutknowledgewouldcheckit(s *discordgo.Sessio
 	})
 
 	if err != nil {
-		fmt.Println("Error creating ticket channel:", err)
+		fmt.Println("Eroor Creating Ticket Channel", err)
 		return
 	}
 
